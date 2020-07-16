@@ -1,0 +1,45 @@
+<%- include('includes/head.ejs'); %>
+
+<%- include('includes/nav.ejs'); %>
+
+
+<h1 class="text-center" style="background-color: black; color: brown; margin-top: 10rem;"> <%= pageTitle %> </h1>
+
+  <section class="container">
+
+    <h1 class="text-center">feched events</h1>
+
+    <% if (events.length > 0) { %>
+      <div class="grid">
+          <% for (let event of events) { %>
+              <article class="card product-item">
+                  <header class="card__header">
+                      <h1 class="product__title"><%= event.title %></h1>
+                  </header>
+                  <div class="card__image">
+                      <img src="<%= event.image %>"
+                          alt="<%= event.title %>">
+                  </div>
+                  <div class="card__content">
+                      <h2 class="product__price">$<%= event.id %></h2>
+                      <p class="product__description"><%= event.description %></p>
+                  </div>
+
+                  <div class="card__actions">
+                    <a href="/event-details/<%= event.event_id %>" class="btn">Details</a>
+                    
+                  </div>
+
+              </article>
+          <% } %>
+      </div>
+  <% } else { %>
+      <h1>No events Found!</h1>
+  <% } %>
+
+
+  </section>
+
+
+  
+<%- include('includes/footer.ejs'); %>

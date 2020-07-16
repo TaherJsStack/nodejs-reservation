@@ -1,0 +1,126 @@
+<%- include('includes/head.ejs'); %>
+
+<%- include('includes/nav.ejs'); %>
+
+<!-- slider -->
+<section class="mainSlider">
+  <div id="mainSlider" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active animate__animated animate__fadeIn">
+        <div class="opacity animate__animated animate__fadeInUp"></div>
+        <img class="d-block w-100 animate__animated animate__fadeIn" src="frontend/img/slider/slider1.jpg" alt="First slide">
+        <div class="captions fslide carousel-caption d-none d-md-block">
+          <p class="animate__animated animate__backInRight  animate__delay-2s">cLorem ipsum dolor sit amet, conconsectetuer adipiscing elit Lorem ipsum</p>
+          <h3 class="active animate__animated  animate__fadeInDownBig">spent a good time and 
+            <strong class="animate__animated animate__fadeInBottomRight animate__delay-1s"> spatial vacation</strong> 
+          </h3>
+          <h4>conconsectetuer adipiscing elit</h4>
+        </div>
+      </div>
+      <div class="carousel-item animate__animated animate__fadeIn">
+        <div class="opacity animate__animated animate__fadeInUp"></div>
+        <img class="d-block w-100 animate__animated animate__fadeIn" src="frontend/img/slider/slider2.jpg" alt="Second slide">\
+        <div class="captions sslide carousel-caption d-none d-md-block">
+          <p class="animate__animated animate__backInRight">dolor sit amet, conconsectetuer adipiscing</p>
+          <h3 class="active animate__animated  animate__fadeInDownBig">BEST PLACE TO FIND 
+            <strong class="animate__animated animate__fadeInBottomRight animate__delay-1s">events hall</strong>
+          </h3>
+          <h4 class=" animate__animated animate__backInUp">cadipiscing elit Lorem ipsum</h4>
+        </div>
+      </div>
+      <div class="carousel-item animate__animated animate__fadeIn">
+        <div class="opacity animate__animated animate__fadeInUp"></div>
+        <img class="d-block w-100 animate__animated animate__fadeIn" src="frontend/img/slider/slider3.jpg" alt="Third slide">
+        <div class="captions tslide carousel-caption d-none d-md-block">
+          <p  class="animate__animated animate__backInRight">ipsum dolor sit amet, conconsectetuer adipiscing elit </p>
+          <h3 class="active animate__animated  animate__fadeInDownBig">carousel inner carousel inner</h3>
+          <h5 class="animate__animated animate__backInUp">adipiscing elit Lorem ipsum adipiscing</h5>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="slider-form">
+      <form>
+        <fieldset>
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <input type="datetime-local" name="from" class="form-control form-control-sm" /> 
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <input type="datetime-local"  name="to"  class="form-control form-control-sm"/>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <select class="form-control">
+                <option value="1">servic level</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <input type="number" name="guest" class="form-control form-control-sm" placeholder="guest counts"/>
+            </div>
+            <div class="col-md-1 col-sm-6">
+              <button class="btn btn-info btn-sm mb-2" type="submit">check</button>
+            </div>
+          </div>            
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- end slider -->
+
+<!-- Services -->
+<section class="services">
+  <div class="container">
+    <h1> Services Property</h1>
+  </div>
+</section>
+<!-- end Services -->
+
+<!-- POPULAR PLACES -->
+<section class="places">
+  <div class="container">
+    <h1>POPULAR PLACES</h1>
+  </div>
+</section>
+<!-- POPULAR PLACES -->
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="container">
+    <h1>gallery</h1>
+  </div>
+</section>
+<!-- end GALLERY -->
+
+<!-- SPONSORS -->
+<section class="sponsors">
+  <div class="container">
+    <h1>sponsors</h1>
+  </div>
+</section>
+<!-- end SPONSORS -->
+
+<!-- footer -->
+<section class="footer">
+  <div class="container">
+    <h1> footer </h1>
+  </div>
+</section>
+<!-- end footer -->
+
+<%- include('includes/footer.ejs'); %>

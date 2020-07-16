@@ -1,0 +1,174 @@
+<%- include('includes/head.ejs'); %>
+
+<%- include('includes/nav.ejs'); %>
+
+<h1 class="text-center" style="background-color: black; color: brown; margin-top: 10rem;"> <%= pageTitle %> </h1>
+
+<div class="container-fluid" id="grad1">
+  <div class="row justify-content-center mt-0">
+      <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+          <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+              <h2><strong>Sign Up Your User Account</strong></h2>
+              <p>Fill all form field to go to next step</p>
+              <div class="row">
+                  <div class="col-md-12 mx-0">
+                      <form id="reservForm" action="/reserv" method="POST">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                          <li class="active" id="account"><strong>Account</strong></li>
+                          <li id="personal"><strong>Personal</strong></li>
+                          <li id="reserv"><strong>Reservation</strong></li>
+                          <li id="payment"><strong>Payment</strong></li>
+                          <li id="confirm"><strong>Finish</strong></li>
+                        </ul> <!-- fieldsets -->
+
+                        <!-- Account -->
+                        <fieldset>
+                          <div class="form-card">
+                            <h2 class="fs-title">Account Information</h2>
+                            <p id="field-checker" class="text-danger field-checker">some fields are missing or empty</p>
+                            <input type="email" name="email" placeholder="Email Id" required /> 
+                            <input type="text"  name="uname" placeholder="UserName" required minlength="5"/>
+                            <p id="pass-checker" class="text-danger pass-checker">password does not match</p>
+                            <input type="password" id="pwd"  name="pwd" placeholder="Password" required /> 
+                            <input type="password" id="cpwd" name="cpwd" placeholder="Confirm Password" required />
+                          </div> 
+                          <input type="button" id="account" name="next" class="next action-button" value="Next Step" />
+                        </fieldset>
+                        
+                        <!-- Personal -->
+                        <fieldset>
+                          <div class="form-card">
+                            <h2 class="fs-title">Personal Information</h2> 
+
+                            <p id="field-checker" class="text-danger field-checker">some fields are missing or empty</p>
+
+                            <input type="text" name="fname" placeholder="First Name"    required minlength="3"/> 
+                            <input type="text" name="lname" placeholder="Last Name"     required minlength="3"/> 
+                            <input type="number" name="phno"  placeholder="Contact No." required maxlength="11"/> 
+                            <input type="text" name="address" placeholder="address"     required minlength="3">
+                            
+                            <input type="number" name="phno_2" placeholder="Alternate Contact No." />
+                          </div> 
+                          <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+                          <input type="button" id="personal" name="next" class="next action-button" value="Next Step" />
+                        </fieldset>
+
+                        <!-- Reservation -->
+                        <fieldset>
+                          <div class="form-card">
+                            <h2 class="fs-title">reservation Information</h2> 
+
+                            <p id="field-checker" class="text-danger field-checker">some fields are missing or empty</p>
+
+                            <ul class="nav nav-tabs">
+                              <li><a href="#event" data-toggle="tab" class="btn btn-outline-primary">Event</a></li>
+                              <li><a href="#room" data-toggle="tab" class="btn btn-outline-info">Room</a></li>
+                            </ul>
+                            <div class="tab-content" id="tabs">
+                              <div class="tab-pane" id="event">
+                                <br><br>
+                                <input type="text" name="title" id="title" placeholder="title">
+                                <input type="datetime-local" name="eve_from" id="eve_from" placeholder="">
+                                <input type="datetime-local" name="eve_to" id="eve_to" placeholder="">
+                                <input type="text" name="subject" id="subject" placeholder="subject">
+                                <input type="text" name="notes" id="notes" placeholder="notes.....">
+                                <input type="hidden" name="tab">
+                                <textarea id="description" rows="3" name="description" placeholder=" event description ......"></textarea>
+    
+                              </div>
+                              <div class="tab-pane" id="room">
+                                <br><br>
+                               
+                                <input type="datetime-local" name="reserv_from" id="reserv_from" placeholder="">
+                                <input type="datetime-local" name="reserv_to" id="reserv_to" placeholder="">
+                                <input type="number" name="bed" id="bed" placeholder="bed countes">
+                                <input type="number" name="level" id="level" placeholder="level no">
+                                <input type="text" name="room_notes" id="notes" placeholder="notes.....">
+                                <textarea id="description" rows="3" name="room_description" placeholder=" event description ......"></textarea>
+    
+                              </div>
+                            </div>
+                            
+                          </div> 
+                          <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+                          <input type="button" id="reservation" name="next" class="next action-button" value="Next Step" />
+                        </fieldset>
+
+                        <!-- Payment -->
+                        <fieldset>
+                          <div class="form-card">
+                            <h2 class="fs-title">Payment Information</h2>
+                            <div class="radio-group">
+                              <div class='radio' data-value="credit"><img src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" height="100px"></div>
+                              <div class='radio' data-value="paypal"><img src="https://i.imgur.com/jXjwZlj.jpg" width="200px" height="100px"></div> <br>
+                            </div> 
+                            <label class="pay">Card Holder Name*</label> 
+                            <input type="text" name="holdername" placeholder="" required minlength="7" />
+                            <div class="row">
+                              <div class="col-9"> 
+                                <label class="pay">Card Number*</label> 
+                                <input type="number" name="cardno" placeholder="0000 0000 0000 0000" required minlength="12" maxlength="12"/> 
+                              </div>
+                              <div class="col-3"> 
+                                <label class="pay">CVC*</label> 
+                                <input type="password" name="cvcpwd" placeholder="***" required minlength="3" maxlength="3"/>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-3"> 
+                                <label class="pay">Expiry Date*</label>
+                              </div>
+                              <div class="col-9"> 
+                                <select class="list-dt" id="month" name="expmonth" required>
+                                  <option selected>Month</option>
+                                  <option>January</option>
+                                  <option>February</option>
+                                  <option>March</option>
+                                  <option>April</option>
+                                  <option>May</option>
+                                  <option>June</option>
+                                  <option>July</option>
+                                  <option>August</option>
+                                  <option>September</option>
+                                  <option>October</option>
+                                  <option>November</option>
+                                  <option>December</option>
+                                </select> 
+
+                                <select class="list-dt" id="year" name="expyear" required>
+                                  <option selected>2020</option>
+                                </select> 
+                              </div>
+                            </div>
+                          </div> 
+                          <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+                          <input type="submit" class="next action-button" value="make reserv" />
+                        </fieldset>
+
+                        <!-- Finish -->
+                        <fieldset>
+                          <div class="form-card">
+                            <h2 class="fs-title text-center">Success !</h2> <br><br>
+                            <div class="row justify-content-center">
+                              <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
+                            </div> <br><br>
+                            <div class="row justify-content-center">
+                              <div class="col-7 text-center">
+                                <h5>You Have Successfully Signed Up</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                        
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<%- include('includes/footer.ejs'); %>
