@@ -93,8 +93,8 @@ Rooms.belongsTo(Clients, {constraints: true, foreignKey: 'clientId', onDelete: '
     // return user.createCart();
   })
   .then( () => {
-    let port = 3000 
-    app.listen(3000);
+    let port = 7000 
+    app.listen(7000);
     console.log("\n \n magic happens on port ", port)
   })
   .catch(err => {
