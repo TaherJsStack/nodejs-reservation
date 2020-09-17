@@ -55,7 +55,7 @@ exports.eventDetails = (req, res, next) => {
       res.render('frontend/event-details', {
         event: event[0],
         pageTitle: event[0].title,
-        path: 'frontend/event-details',
+        path: '/event-details',
       });
     })
     .catch(err => console.log(err));

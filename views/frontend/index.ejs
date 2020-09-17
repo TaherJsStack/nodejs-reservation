@@ -2,12 +2,12 @@
 
 <%- include('includes/nav.ejs'); %>
 
-<!-- slider -->
-<section class="mainSlider">
+<!-- SLIDER -->
+<div class="mainSlider">
   <div id="mainSlider" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active animate__animated animate__fadeIn">
-        <div class="opacity animate__animated animate__fadeInUp"></div>
+        <div class="gradient-opacity animate__animated animate__fadeInUp"></div>
         <img class="d-block w-100 animate__animated animate__fadeIn" src="frontend/img/slider/slider1.jpg" alt="First slide">
         <div class="captions fslide carousel-caption d-none d-md-block">
           <p class="animate__animated animate__backInRight  animate__delay-2s">cLorem ipsum dolor sit amet, conconsectetuer adipiscing elit Lorem ipsum</p>
@@ -18,8 +18,8 @@
         </div>
       </div>
       <div class="carousel-item animate__animated animate__fadeIn">
-        <div class="opacity animate__animated animate__fadeInUp"></div>
-        <img class="d-block w-100 animate__animated animate__fadeIn" src="frontend/img/slider/slider2.jpg" alt="Second slide">\
+        <div class="gradient-opacity animate__animated animate__fadeInUp"></div>
+        <img class="d-block w-100 animate__animated animate__fadeIn" src="frontend/img/slider/slider2.jpg" alt="Second slide">
         <div class="captions sslide carousel-caption d-none d-md-block">
           <p class="animate__animated animate__backInRight">dolor sit amet, conconsectetuer adipiscing</p>
           <h3 class="active animate__animated  animate__fadeInDownBig">BEST PLACE TO FIND 
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="carousel-item animate__animated animate__fadeIn">
-        <div class="opacity animate__animated animate__fadeInUp"></div>
+        <div class="gradient-opacity animate__animated animate__fadeInUp"></div>
         <img class="d-block w-100 animate__animated animate__fadeIn" src="frontend/img/slider/slider3.jpg" alt="Third slide">
         <div class="captions tslide carousel-caption d-none d-md-block">
           <p  class="animate__animated animate__backInRight">ipsum dolor sit amet, conconsectetuer adipiscing elit </p>
@@ -80,32 +80,384 @@
       </form>
     </div>
   </div>
-</section>
-<!-- end slider -->
+</div>
+<!-- END SLIDER -->
 
-<!-- Services -->
-<section class="services">
-  <div class="container">
-    <h1> Services Property</h1>
+<!-- ABOUT US -->
+<section class="about-us mt-5 pt-5">
+
+  <div class="container text-center">
+    <h3>ABOUT <span> US</span> </h3>
+    <p class="w-50 p-3 mx-auto text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex neque, 
+      sodales accumsan sapien et, auctor vulputate quam donec vitae consectetur turpis
+    </p>
+    <div class="row text-left text">
+      <div class="col-md-6">
+        <h4 class="text-center">LUXURIOUS HOTEL IN THE TOWN</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius iaculis gravida. Nunc vel maximus libero. Quisque ligula nisi, hendrerit et scelerisque et, scelerisque vitae magna. Integer sollicitudin, ex auctor iaculis tempor, mauris odio accumsan odio.
+          <br> <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius iaculis gravida. Nunc vel maximus libero. Quisque ligula nisi, hendrerit et scelerisque et, scelerisque vitae magna. Integer sollicitudin, ex auctor iaculis tempor, mauris odio accumsan odio.
+        </p>
+        <button type="button" class="btn btn-info ">
+          <a href="/contact">
+            contact us
+          </a>
+        </button>
+      </div>
+
+      <div class="col-md-6">
+        <div class="images-box row">
+          <div class="col-6">
+            <img style="width: 100%;" src="frontend/img/luxurious/1.jpg" >
+          </div>
+          <div class="col-6">
+            <img style="width: 100%;" src="frontend/img/luxurious/3.jpg" >
+          </div>
+          <div class="col-6">
+            <img style="width: 100%;" src="frontend/img/luxurious/2.jpg" >
+          </div>
+          <div class="col-6">
+            <img style="width: 100%;" src="frontend/img/luxurious/4.jpg" >
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<!-- end Services -->
+<!-- END ABOUT US -->
+
+<!-- SERVICES -->
+<section class="services">
+
+  <div class="container text-center">
+    <div class="opacity"></div>
+    <h3> Services Property</h3>
+    <p>
+      LOREM IPSUM DOLOR SIT AMET, CONSECTETURADIPISCING ELIT. DONEC AT LIGULA IN LIGULA ULTRICESVULPUTATE AT AC SAPIEN. 
+      IN JUSTO NEQUE, MALESUADAA LIBERO ET, LOREM IPSUM DOLOR SIT AMET,CONSECTETUR ADIPISCING ELIT
+    </p>    
+    <a href="/reserv">
+      <button type="button"  class="btn btn-info">
+        Get Reservation
+      </button>
+    </a>
+    <div class="row services-img" style="background-color: rgb(128, 126, 126); position: absolute; margin: auto; left: 0; right: 0; width: 80%;">
+
+        <div class="col-3">
+          <img style="width: 100%;" src="frontend/img/services/online-booking.jpeg">
+          <h5>Online Room Booking </h5>
+          <p>
+            LOREM IPSUM DOLOR SIT AMET, CONSECTETURADIPISCING ELIT. DONEC AT LIGULA IN LIGULA ULTRICESVULPUTATE AT AC SAPIEN. 
+            IN JUSTO NEQUE, MALESUADAA LIBERO ET, LOREM IPSUM DOLOR SIT AMET,CONSECTETUR ADIPISCING ELIT
+          </p>
+        </div>
+        <div class="col-3">
+          <img style="width: 100%;" src="frontend/img/services/staffs.jpg">
+          <h5>Experience Staffs </h5>
+          <p>
+            LOREM IPSUM DOLOR SIT AMET, CONSECTETURADIPISCING ELIT. DONEC AT LIGULA IN LIGULA ULTRICESVULPUTATE AT AC SAPIEN. 
+            IN JUSTO NEQUE, MALESUADAA LIBERO ET, LOREM IPSUM DOLOR SIT AMET,CONSECTETUR ADIPISCING ELIT
+          </p>
+        </div>
+        <div class="col-3">
+          <img style="width: 100%;" src="frontend/img/services/car-rentals.jpg">
+          <h5>Car Rentals Service </h5>
+          <p>
+            LOREM IPSUM DOLOR SIT AMET, CONSECTETURADIPISCING ELIT. DONEC AT LIGULA IN LIGULA ULTRICESVULPUTATE AT AC SAPIEN. 
+            IN JUSTO NEQUE, MALESUADAA LIBERO ET, LOREM IPSUM DOLOR SIT AMET,CONSECTETUR ADIPISCING ELIT
+          </p>
+        </div>
+        <div class="col-3">
+          <img style="width: 100%;" src="frontend/img/services/delicious-food.jpeg">
+          <h5>Delicious Food </h5>
+          <p>
+            LOREM IPSUM DOLOR SIT AMET, CONSECTETURADIPISCING ELIT. DONEC AT LIGULA IN LIGULA ULTRICESVULPUTATE AT AC SAPIEN. 
+            IN JUSTO NEQUE, MALESUADAA LIBERO ET, LOREM IPSUM DOLOR SIT AMET,CONSECTETUR ADIPISCING ELIT
+          </p>
+        </div>
+  
+    </div>
+  
+  </div>
+
+</section>
+<!-- END SERVICES -->
 
 <!-- POPULAR PLACES -->
 <section class="places">
+<br> <br><br><br><br><br><br><br><br><br><br><br>
+
   <div class="container">
     <h1>POPULAR PLACES</h1>
+      <!-- Swiper -->
+      <div class="swiper-places">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/5.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/6.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/7.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/8.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/9.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(frontend/img/places/11.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
   </div>
 </section>
-<!-- POPULAR PLACES -->
+<!-- END POPULAR PLACES -->
 
-<!-- GALLERY -->
-<section class="gallery">
-  <div class="container">
-    <h1>gallery</h1>
+<!-- EXPLORE DISCOVER -->
+<section class="discover p-0 clearfix">
+  <div class="discover-text p-5 text-center mx-auto">
+    <span>span text here</span>
+    <h4>DISCOVER A BRAND LUXURIOUS HOTEL</h4>
+    <p class="text-left my-auto p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, eros nec porttitor viverra, felis libero luctus nisi, non volutpat purus felis ut erat ipsum.
+      <br> <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, eros nec porttitor viverra, felis libero luctus nisi, non volutpat purus felis ut erat ipsum.</p>
+  </div>
+  <div class="discover-video my-auto">
+    <iframe width="100%" height="434px" src="https://www.youtube.com/embed/iRzHn2m2qMQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </section>
-<!-- end GALLERY -->
+<!-- End DISCOVER -->
+
+<!-- SUBSCRIBE -->
+<section class="subscribe">
+  <h3 class="text-center">SUBSCRIBE TO OUR NEWSLETTER</h3>
+  <div class="container">
+    <div class="row w-75 mx-auto text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+           Donec ex neque, sodales accumsan sapien et, 
+           auctor vulputate quam donec vitae consectetur turpis
+        </p>
+        <div class="form-group rounded-pill p-1 mx-auto  w-50">
+          <div class="newsletter d-flex justify-content-center px-3">
+            <input class="w-100 mr-2" type="email" placeholder="e-Mail">
+            <button type="button" class="btn btn-info ">subscribe</button>
+          </div> 
+        </div>
+    </div>
+  </div>
+</section>
+<!-- END SUBSCRIBE -->
+
+<!-- ROOMS -->
+<section class="rooms">
+  <span>subscribe Span</span>
+  <h3 class="text-center">Our Special Rooms</h3>
+  <P class="mb-5 w-25 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Donec ex neque, sodales accumsan sapien et, 
+    auctor vulputate quam donec vitae consectetur turpis</P>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://hotels.elgouna.com/wp-content/uploads/2019/10/4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow bg-white" style="width: 18rem;">
+          <img src="https://hotels.elgouna.com/wp-content/uploads/2019/10/4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://hotels.elgouna.com/wp-content/uploads/2019/10/4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- END ROOMS -->
+
+<!-- EVENTS -->
+<section class="events">
+  <div class="container">
+    <div class="row">
+
+    <div class="col-md-6">
+       <div class="event-hall d-flex justify-content-center">
+        
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <span>span</span>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <span>span </span>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="event-text">
+        <span>venue for all types of live entertainmen</span>
+        <h3>events hall</h3>
+        <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETURADIPISCING ELIT. DONEC AT LIGULA IN LIGULA ULTRICESVULPUTATE AT AC SAPIEN. 
+          IN JUSTO NEQUE, MALESUADAA LIBERO ET, LOREM IPSUM DOLOR SIT AMET,CONSECTETUR ADIPISCING ELIT
+        </p>
+
+      </div>
+    </div>
+      
+  </div>
+
+
+  </div>
+</section>
+<!-- END EVENTS -->
+
+<!-- PHONE APP -->
+<section class="phone-app" style="background-color: burlywood;">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <span>spam</span>
+        <h3>ggggggggggg</h3>
+        <p>ssssssssssssssssssssssssssssssssssssssssssssss</p>
+        <a href="/contact">
+          <button type="button"  class="btn btn-info">
+            download app <i class="fas fa-caret-down"></i> <i class="far fa-caret-square-down"></i>
+          </button>
+        </a>
+      </div>
+      <div class="col-6">
+        <div class="phone-img"></div>
+        <img src="frontend/img/phone-app/iphoneX.png" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END PHONE APP -->
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="container">
+    <div class="swiper-container">
+      <div class="parallax-bg" style="background-image:url(https://aegeanislands.promo/wp-content/uploads/2020/01/http-cdn.cnn_.com-cnnnext-dam-assets-191219160200-the-legian-sire-one-bedroom-beachfront-villa-overview.jpg)" data-swiper-parallax="-23%"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">
+            <div class="client-img">
+              <img class="rounded-circle w-10" src="frontend/img/testimonial/client1.png">
+            </div>
+          </div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+              felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+              magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+              quis feugiat.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+            <div class="client-img">
+              <img class="rounded-circle w-10" src="frontend/img/testimonial/client2.png">
+            </div>
+          </div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+              felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+              magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper .</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">
+            <div class="client-img">
+              <img class="rounded-circle w-10" src="frontend/img/testimonial/client3.png">
+            </div>
+          </div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+              felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+              magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+              quis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination swiper-pagination-white"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+  </div>
+</section>
+<!-- END TESTIMONIAL -->
 
 <!-- SPONSORS -->
 <section class="sponsors">
@@ -113,14 +465,8 @@
     <h1>sponsors</h1>
   </div>
 </section>
-<!-- end SPONSORS -->
+<!-- END SPONSORS -->
 
-<!-- footer -->
-<section class="footer">
-  <div class="container">
-    <h1> footer </h1>
-  </div>
-</section>
-<!-- end footer -->
+
 
 <%- include('includes/footer.ejs'); %>

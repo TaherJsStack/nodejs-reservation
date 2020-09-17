@@ -151,14 +151,14 @@ function addRoom(_reservFrom, _reservTo, _bed, _level, _roomNo, _notes, _clientI
 
 function addPayment(_payType, _cardHeaderName, _cardNo, _expiryMonth, _expiryYear, _cvc, _clientId, _creator) {
   Payment.create({
-    payType:     _payType,
+    payType:        _payType,
     cardHeaderName: _cardHeaderName,
-    cardNo:      _cardNo,
-    expiryMonth: _expiryMonth,
-    expiryYear:  _expiryYear,
-    cvc:         _cvc,
-    clientId:    _clientId,
-    creator:     _creator,
+    cardNo:         _cardNo,
+    expiryMonth:    _expiryMonth,
+    expiryYear:     _expiryYear,
+    cvc:            _cvc,
+    clientId:       _clientId,
+    creator:        _creator,
   })
   .then( addPaymentDone => {
       console.log('addPaymentDone =>', addPaymentDone.dataValues)
@@ -187,7 +187,7 @@ function addPayment(_payType, _cardHeaderName, _cardNo, _expiryMonth, _expiryYea
 exports.reserv = (req, res, next) => {
   res.render('frontend/reserv', {
     pageTitle: 'reserv page',
-    path: 'frontend/reserv',
+    path: '/reserv',
     editing: false
   });
 }

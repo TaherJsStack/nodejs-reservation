@@ -28,6 +28,7 @@ app.use('/images', express.static(path.join ( __dirname, '/images')));
 app.use('/', express.static(path.join( __dirname, 'public')));
 
 const db = require('./util/database');
+const { post } = require("jquery");
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -92,7 +93,9 @@ Rooms.belongsTo(Clients, {constraints: true, foreignKey: 'clientId', onDelete: '
     // return user.createCart();
   })
   .then( () => {
-    app.listen(4000);
+    let port = 3000 
+    app.listen(3000);
+    console.log("\n \n magic happens on port ", port)
   })
   .catch(err => {
     console.log(err);

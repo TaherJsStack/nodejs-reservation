@@ -1,8 +1,7 @@
-<section class="nav-top fixed-top top-menu">
  
-  <nav class="navbar navbar-expand-lg navbar-light ">
+  <nav class="navbar navbar-expand-lg navbar-light nav-top fixed-top top-menu ">
     <a class="navbar-brand" href="#">
-      <img class="logo" src="frontend/img/logo.jpeg">
+      <img class="logo" src="frontend/img/logo.png">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,13 +15,26 @@
         </li> -->
       </ul>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="/">home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/gallery">gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="/events">events</a></li>
-        <li class="nav-item"><a class="nav-link" href="/blog">blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="/reserv">reserv</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact">contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link <%= path === '/' ? 'nav-active' : '' %>" href="/">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= path === '/gallery' ? 'nav-active' : '' %>" href="/gallery">gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= path === '/events' ? 'nav-active' : '' %>"  href="/events">events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= path === '/blog' ? 'nav-active' : '' %>"  href="/blog">blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= path === '/reserv' ? 'nav-active' : '' %>"  href="/reserv">reserv</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= path === '/contact' ? 'nav-active' : '' %>"  href="/contact">contact</a>
+        </li>
       </ul>
     </div>
   </nav>
-</section>
+
+  <!-- path -->

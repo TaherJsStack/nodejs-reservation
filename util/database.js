@@ -1,4 +1,16 @@
 const Sequelize = require('sequelize');
+const { post } = require('jquery');
+
+// const sequelize = new Sequelize('sql12357834', 'sql12357834', '', {
+//   dialect: 'mysql',
+//   host: 'sql12.freemysqlhosting.net',
+//   post: '3306'
+// });
+
+// module.exports = sequelize;
+
+	
+
 
 const sequelize = new Sequelize('travel', 'root', '', {
   dialect: 'mysql',
